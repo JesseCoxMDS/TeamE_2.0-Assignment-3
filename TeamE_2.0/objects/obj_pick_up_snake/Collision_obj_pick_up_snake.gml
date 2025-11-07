@@ -5,3 +5,4 @@ game_manager.pick_up_array[array_end] = instance_create_layer(random_x,random_y,
 game_manager.pick_up_array[array_end].game_manager = game_manager;
 show_debug_message("pickup hit pickup")
 instance_destroy();
+
