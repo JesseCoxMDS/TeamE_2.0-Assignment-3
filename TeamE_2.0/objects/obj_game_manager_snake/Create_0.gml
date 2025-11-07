@@ -3,9 +3,11 @@
 player_score = 0;
 pick_up_array = [];
 dodge_array = [];
-pick_up_amount = 0;
+pick_up_amount = 2;
 dodge_amount = 0;
 player = pointer_null
+is_screen_shake = 0;
+is_screen_shake_heavy = 0;
 //---------------------------------------------------------------------------------------------------------
 //FUNCTIONS
 //---------------------------------------------------------------------------------------------------------
@@ -37,8 +39,17 @@ for(i = 0;i < dodge_amount;i++)
 	dodge_array[i] = item;
 }
 
+function Screen_Shake()
+{
+	layer_set_visible("Screen_Shake",true)
+	is_screen_shake = 3;
+}
 
-
+function Screen_Shake_Heavy()
+{
+	layer_set_visible("Screen_Shake_Heavy",true)
+	is_screen_shake_heavy = 3;
+}
 	
 
 

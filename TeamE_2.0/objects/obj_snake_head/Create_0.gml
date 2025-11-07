@@ -3,7 +3,7 @@ enum Direction {up,down,left,right}
 last_position = {x:0,y:0}
 move_timer = 6;
 current_move_timer = 0;
-timer_tick = 0.01;
+timer_tick = 0.005;
 game_manager = pointer_null;
 body_parts[0] = self;
 start_body_parts = 50
@@ -93,3 +93,11 @@ function Out_Of_Bounds()
 	if(y > 64 * 11){y = 0}
 }
 //--------------------------------------------------------------------------------------------------------------
+function Add_Body(_amount)
+{
+		for (i = 1;i < _amount +1;i++)
+		{
+			show_debug_message(array_length(body_parts)+i)
+			body_parts[array_length(body_parts)+i] = instance_create_layer(x-64(32*i),y,"Instances",obj_snake_body);
+		}
+}
