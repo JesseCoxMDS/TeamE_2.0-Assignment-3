@@ -50,6 +50,11 @@ function Screen_Shake_Heavy()
 	layer_set_visible("Screen_Shake_Heavy",true)
 	is_screen_shake_heavy = 3;
 }
+
+function FinishGame()
+{
+	room_goto(rm_overworld)
+}
 	
 
 

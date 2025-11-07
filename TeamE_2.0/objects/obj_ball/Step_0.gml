@@ -1,4 +1,6 @@
 
+Collision()
+Squish()
 if(y > room_height + 16)
 {
 	x = spawn_position.x;
