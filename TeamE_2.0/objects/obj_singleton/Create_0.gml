@@ -1,11 +1,11 @@
-day = 1;
+day = 0;
 final_day = 30;
-limb_sockets = 0;
+scrap_carrying = 0;
+limbs_carrying = 0;
+
+body_parts_carrying = [];
+
 eidalon_power_level = 0;
-
-
-
-
 
 ambiance_volume = 120;
 unsettling_volume = 0;
