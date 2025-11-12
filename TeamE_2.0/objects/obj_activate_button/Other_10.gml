@@ -18,6 +18,7 @@ if((lockAmount == 5 && obj_lever.leverPosition == 10)|| startSet)
 	}
 	else
 	{
+		obj_singleton.eidalon_power_level += 10;
 		obj_body_1.moveSet = 1;
 		obj_body_2.moveSet = 1;
 	}
