@@ -8,6 +8,8 @@ dodge_amount = 0;
 player = pointer_null
 is_screen_shake = 0;
 is_screen_shake_heavy = 0;
+window_set_cursor(cr_none);
+audio_play_sound(sfx_aery,1,false);
 //---------------------------------------------------------------------------------------------------------
 //FUNCTIONS
 //---------------------------------------------------------------------------------------------------------

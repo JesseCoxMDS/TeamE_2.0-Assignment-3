@@ -18,6 +18,7 @@ function Move()
 
 function Squeez()
 {
+	Random_SFX_3(sfx_paddle_hit,sfx_paddle_hit2,sfx_paddle_hit3,1,1)
 	hit_anim = 3;
 	image_xscale = 1.2;
 	image_yscale = 0.8;

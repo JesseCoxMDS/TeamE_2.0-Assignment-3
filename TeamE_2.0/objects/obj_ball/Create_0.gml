@@ -12,11 +12,18 @@ function Collision()
 		move_bounce_solid(0);  
 		hit_anim = 3
 		Squeez()
+
+		
+		if (hit.object_index  == obj_wall_brick_break)
+		{
+			Random_SFX_2(sfx_wall,sfx_wall,0.8,1)	
+		}
+		
 		if (hit.object_index  == obj_limb_bumper || hit.object_index  == obj_scrap_bumper)
 		 {
-			 with(hit){Squeez()}
-			with(obj_game_manager_brick_break){Screen_Shake();max_parts -= 1;}
-			}
+			with(hit){Squeez()}
+			
+	}
 	}
 	if (place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), obj_player_paddle)) 
 	{
@@ -27,7 +34,6 @@ function Collision()
 		move_bounce_solid(0);  
 		hit_anim = 3
 		Squeez()
-
 	}	
 }
 

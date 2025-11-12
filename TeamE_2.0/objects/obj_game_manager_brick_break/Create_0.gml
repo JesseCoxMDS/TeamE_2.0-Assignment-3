@@ -12,5 +12,6 @@ function Screen_Shake()
 
 function Finish_Game()
 {
+	window_set_cursor(cr_arrow);
 	room_goto(rm_overworld)	
 }

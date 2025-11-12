@@ -7,6 +7,8 @@ timer_tick = 0.005;
 game_manager = pointer_null;
 body_parts[0] = self;
 start_body_parts = 50
+rotation = 90;
+next_rotation = 90;;
 
 current_direction = Direction.right;
 
@@ -23,18 +25,22 @@ function input_manager()
 	if(keyboard_check_pressed(ord("A")) && current_direction != Direction.right && current_direction != Direction.left)
 	{
 		current_direction = Direction.left
+		next_rotation = 270;
 	}
 	else if(keyboard_check_pressed(ord("S")) && current_direction != Direction.up && current_direction != Direction.down)
 	{
 		current_direction = Direction.down
+		next_rotation = 0;
 	}
 	else if(keyboard_check_pressed(ord("D")) && current_direction != Direction.left && current_direction != Direction.right)
 	{
 		current_direction = Direction.right
+		next_rotation = 90;
 	}
 	else if(keyboard_check_pressed(ord("W")) && current_direction != Direction.down && current_direction != Direction.up)
 	{
 		current_direction = Direction.up
+		next_rotation = 180;
 	}
 }
 //--------------------------------------------------------------------------------------------------------------
@@ -76,6 +82,7 @@ function Move()
 			body_parts[i].y = body_parts[i-1].last_position.y
 		}
 	}
+	rotation = next_rotation;
 	timer_tick += 0.0001;
 }
 //--------------------------------------------------------------------------------------------------------------
