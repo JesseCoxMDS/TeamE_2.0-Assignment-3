@@ -6,6 +6,7 @@ if(canMove)
 	if(leverPosition < sprite_get_number(sprite_index) -1)
 	{
 		leverPosition += 2;
+			with(obj_singleton){Activate_Screen_Shake(2);}
 	}
 }
 

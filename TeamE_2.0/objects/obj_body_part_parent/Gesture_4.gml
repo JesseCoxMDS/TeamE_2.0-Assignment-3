@@ -39,3 +39,5 @@ if(bbox_bottom > 700 or bbox_right > 735 or bbox_top < 60 or bbox_left < 60)
 
 show_debug_message(obj_bag.totalItemsInside);
 waitFrame = 5;
+	with(obj_singleton){Activate_Screen_Shake(2);}
+	Random_SFX_2(sfx_limb2,sfx_limb2,0.9,1.1)

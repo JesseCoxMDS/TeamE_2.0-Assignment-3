@@ -108,3 +108,15 @@ function Add_Body(_amount)
 			body_parts[array_length(body_parts)+i] = instance_create_layer(x-64(32*i),y,"Instances",obj_snake_body);
 		}
 }
+
+function Squeez()
+{
+	image_xscale = 1.5;
+	image_yscale = 1.5;
+}
+
+function Squish()
+{
+	if(image_xscale != 1){image_xscale = lerp(image_xscale,1,0.1)}
+	if(image_yscale != 1){image_yscale = lerp(image_yscale,1,0.1)}
+}

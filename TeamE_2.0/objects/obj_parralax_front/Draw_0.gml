@@ -1,5 +1,4 @@
 with(obj_singleton){other.day = day}
-show_debug_message(day)
 if (day <= 10)
 {
 	draw_sprite_ext(spr_01,0,x,y,image_xscale,image_yscale,0,c_white,1)

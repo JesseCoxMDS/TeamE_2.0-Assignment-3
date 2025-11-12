@@ -6,6 +6,7 @@ if(canMove)
 	if(leverPosition > 0)
 	{
 		leverPosition -= 2;
+			with(obj_singleton){Activate_Screen_Shake(2);}
 	}
 }
 

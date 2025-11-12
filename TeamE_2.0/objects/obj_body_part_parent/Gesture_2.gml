@@ -9,4 +9,5 @@ if(obj_bag.dragging == false)
 
 	mouseOffsetX = x-mouse_x;
 	mouseOffsetY = y-mouse_y;
+	Random_SFX_2(sfx_limb,sfx_limb,0.9,1.1)
 }
