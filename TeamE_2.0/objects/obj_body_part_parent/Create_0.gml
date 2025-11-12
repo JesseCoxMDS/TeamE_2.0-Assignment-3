@@ -5,6 +5,7 @@ bound_y_max = 480
 
 dragging = false;
 collideChecking = false;
+inside = false;
 spriteScale = 10;
 waitFrame = 0;
 

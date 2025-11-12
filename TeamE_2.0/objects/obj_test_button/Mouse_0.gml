@@ -1,1 +1,0 @@
-instance_create_layer(irandom_range(bound_x_min, bound_x_max), irandom_range(bound_y_min, bound_y_max), "instances", bagObjects[irandom(5)]);

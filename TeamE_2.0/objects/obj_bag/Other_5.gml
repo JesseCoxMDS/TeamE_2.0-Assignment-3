@@ -1,0 +1,1 @@
+obj_singleton.limbs_carrying += totalItemsInside;
