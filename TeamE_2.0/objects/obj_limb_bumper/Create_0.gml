@@ -22,8 +22,8 @@ function Squish()
 	if(image_xscale > 0.96 && image_yscale > 0.96 && dieing == true)
 	{
 		with(obj_game_manager_brick_break){Screen_Shake();max_parts -= 1;}
+		
 		instance_destroy()	
 	}
-	
 }
 

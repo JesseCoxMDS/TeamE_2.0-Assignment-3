@@ -2,7 +2,8 @@ random_set_seed(current_time);
 is_screen_shake = 0;
 max_parts = 30;
 window_set_cursor(cr_none);
-
+hit_limb = 0;
+hit_scrape = 0;
 
 function Screen_Shake()
 {
@@ -14,4 +15,21 @@ function Finish_Game()
 {
 	window_set_cursor(cr_arrow);
 	room_goto(rm_overworld)	
+}
+
+function fuse_into_machine_parts()
+{
+	hit_limb--
+	hit_scrape--
+	with(obj_singleton)
+	{
+		if (limbs_carrying > 0 && scrap_carrying > 0)
+		{
+			limbs_carrying--;
+			scrap_carrying--;
+			machine_parts_carrying++
+		}
+		
+	}
+	
 }

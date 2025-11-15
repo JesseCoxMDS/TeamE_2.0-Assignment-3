@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_morgue",
   "spriteId": {
-    "name": "spr_morgue",
-    "path": "sprites/spr_morgue/spr_morgue.yy",
+    "name": "spr_morgue_unfocused",
+    "path": "sprites/spr_morgue_unfocused/spr_morgue_unfocused.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,8 +1,8 @@
-day = 28;
+day = 1;
 final_day = 30;
 scrap_carrying = 0;
 limbs_carrying = 0;
-
+machine_parts_carrying = 0;
 body_parts_carrying = [];
 
 eidalon_power_level = 0;
@@ -11,8 +11,9 @@ ambiance_volume = 120;
 unsettling_volume = 0;
 
 screen_shake_timer = 0;
-
+//window_set_fullscreen(true)
 randomise();
+
 function Move_Room(_room,next_day)
 {
 		room_goto(_room);

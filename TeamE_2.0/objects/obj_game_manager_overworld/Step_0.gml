@@ -13,4 +13,4 @@ if(device_mouse_x_to_gui(0) > browser_width - edge && _camera_x < browser_width)
 }
 
 
-camera_set_view_pos(camera,_camera_x,_camera_y)
+//camera_set_view_pos(camera,_camera_x,_camera_y)
