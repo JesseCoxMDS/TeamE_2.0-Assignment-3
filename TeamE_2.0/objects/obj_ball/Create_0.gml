@@ -1,6 +1,10 @@
 hit_anim = 0;
 spawn_position = {x:x,y:y}
-direction = random_range(30,150)
+direction = random_range(10,350)
+while (direction > 80 && direction < 100 || direction > 170 && direction < 190 || direction > 260 && direction < 280)
+{
+	direction = random_range(10,350)
+}
 speed = 6;
 
 function Collision()

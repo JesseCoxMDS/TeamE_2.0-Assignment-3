@@ -1,7 +1,7 @@
 day = 1;
 final_day = 30;
-scrap_carrying = 0;
-limbs_carrying = 0;
+scrap_carrying = 50;
+limbs_carrying = 50;
 machine_parts_carrying = 0;
 body_parts_carrying = [];
 

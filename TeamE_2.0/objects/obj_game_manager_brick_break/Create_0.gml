@@ -17,10 +17,10 @@ function Finish_Game()
 	room_goto(rm_overworld)	
 }
 
-function fuse_into_machine_parts()
+function fuse_into_machine_parts(_x,_y)
 {
-	hit_limb--
-	hit_scrape--
+			hit_limb--
+			hit_scrape--
 	with(obj_singleton)
 	{
 		if (limbs_carrying > 0 && scrap_carrying > 0)
@@ -28,8 +28,16 @@ function fuse_into_machine_parts()
 			limbs_carrying--;
 			scrap_carrying--;
 			machine_parts_carrying++
+			instance_create_layer(_x,_y,"Instances",obj_ball)//704,608
 		}
 		
 	}
 	
 }
+
+function Spawn_Ball()
+{
+	instance_create_layer(704,608,"Instances",obj_ball)
+}
+
+Spawn_Ball()

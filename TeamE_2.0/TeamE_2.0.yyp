@@ -71,6 +71,7 @@
     {"id":{"name":"obj_limb_stump","path":"objects/obj_limb_stump/obj_limb_stump.yy",},"order":6,},
     {"id":{"name":"sfx_aery","path":"sounds/sfx_aery/sfx_aery.yy",},"order":6,},
     {"id":{"name":"spr_background_02_red","path":"sprites/spr_background_02_red/spr_background_02_red.yy",},"order":21,},
+    {"id":{"name":"obj_spawn_bumper_random","path":"objects/obj_spawn_bumper_random/obj_spawn_bumper_random.yy",},"order":8,},
     {"id":{"name":"spr_overworld","path":"sprites/spr_overworld/spr_overworld.yy",},"order":6,},
     {"id":{"name":"obj_wall_brick_break","path":"objects/obj_wall_brick_break/obj_wall_brick_break.yy",},"order":5,},
     {"id":{"name":"spr_background_03_purple","path":"sprites/spr_background_03_purple/spr_background_03_purple.yy",},"order":25,},

@@ -3,7 +3,7 @@
 player_score = 0;
 pick_up_array = [];
 dodge_array = [];
-pick_up_amount = 2;
+pick_up_amount = 3;
 dodge_amount = 0;
 player = pointer_null
 is_screen_shake = 0;

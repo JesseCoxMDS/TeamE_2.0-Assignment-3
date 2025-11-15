@@ -1,3 +1,4 @@
+do_once = false;
 dieing = false;
 hit_anim = 0;
 hp = 1;
@@ -10,7 +11,7 @@ function Squeez()
 {
 	hit_anim = 3;
 	hp -= 1;
-	if (hp <= 0){dieing = true;Random_SFX_2(sfx_1,sfx_2,0.8,1)}else {Random_SFX_2(sfx_3,sfx_4,0.8,1)}
+	if (hp <= 0 && do_once == false){dieing = true;do_once = true;Random_SFX_2(sfx_1,sfx_2,0.8,1)}else {Random_SFX_2(sfx_3,sfx_4,0.8,1)}
 	image_xscale = 0.8;
 	image_yscale = 0.8;
 }
