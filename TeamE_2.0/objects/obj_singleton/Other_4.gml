@@ -8,4 +8,8 @@ if(room == rm_overworld)
 	}
 	event_user(0);
 }
+else if(eidalon_power_level >= 200)
+{
+	audio_play_sound(sfx_aery,1,false);
+}
 

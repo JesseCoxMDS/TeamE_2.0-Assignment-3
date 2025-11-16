@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_spawn_bumper_random",
+  "name": "obj_intro",
   "spriteId": {
-    "name": "spr_hit_bumper",
-    "path": "sprites/spr_hit_bumper/spr_hit_bumper.yy",
+    "name": "spr_intro_text",
+    "path": "sprites/spr_intro_text/spr_intro_text.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -24,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "jayme_game_3",
-    "path": "folders/Objects/jayme_game_3.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

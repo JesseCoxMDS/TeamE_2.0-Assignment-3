@@ -1,15 +1,14 @@
-appear_date = 20;
-object_set_visible(self,true)
+appear_power = 200;
 
 
 
-Day = 0;
+eidalon_power = 0;
 with (obj_singleton)
 {
-	other.Day = day;
+	other.eidalon_power = eidalon_power_level;
 }
 
-if (Day < appear_date)
+if (eidalon_power < appear_power)
 {
-	instance_destroy();
+	visible = false
 }

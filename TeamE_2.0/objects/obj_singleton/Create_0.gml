@@ -1,9 +1,10 @@
-day = 1;
+day = 0;
 final_day = 30;
-scrap_carrying = 50;
-limbs_carrying = 50;
+scrap_carrying = 0;
+limbs_carrying = 0;
 machine_parts_carrying = 0;
 body_parts_carrying = [];
+count_down_timer = 0;
 
 eidalon_power_level = 0;
 
@@ -42,3 +43,11 @@ function Activate_Screen_Shake(_time)
 		}
 }
 
+function timer()
+{
+		if (count_down_timer > 0)
+		{
+				count_down_timer -= 0.1;
+				draw_text_ext(browser_width / 2,10,"Time: " + string(count_down_timer / 6), 20, 1000)
+		}
+}

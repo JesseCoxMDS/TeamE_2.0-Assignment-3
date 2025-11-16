@@ -22,6 +22,8 @@ if((lockAmount == 5 && obj_lever.leverPosition == 10)|| startSet)
 		{
 			obj_singleton.machine_parts_carrying--;
 			obj_singleton.eidalon_power_level += 10;
+			max_count_down -= 10
+			obj_singleton.count_down_timer = max_count_down;
 		}
 
 		obj_body_1.moveSet = 1;

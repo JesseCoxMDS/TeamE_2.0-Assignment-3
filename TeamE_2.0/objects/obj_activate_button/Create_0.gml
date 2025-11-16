@@ -26,3 +26,6 @@ for(var i = 0; i < instance_number(obj_limb_stump_reciever); i++)
 // Inherit the parent event
 event_inherited();
 
+max_count_down = 120;
+obj_singleton.count_down_timer = 120;
+
