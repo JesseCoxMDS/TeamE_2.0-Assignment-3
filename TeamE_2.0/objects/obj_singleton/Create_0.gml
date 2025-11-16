@@ -1,4 +1,4 @@
-day = 0;
+day = 29;
 final_day = 30;
 scrap_carrying = 0;
 limbs_carrying = 0;
@@ -6,7 +6,7 @@ machine_parts_carrying = 0;
 body_parts_carrying = [];
 count_down_timer = 0;
 
-eidalon_power_level = 0;
+eidalon_power_level = 100;
 
 ambiance_volume = 120;
 unsettling_volume = 0;

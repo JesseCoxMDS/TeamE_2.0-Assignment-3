@@ -1,4 +1,4 @@
-with(obj_game_manager_brick_break)
+sprwith(obj_game_manager_brick_break)
 {
 	hit_limb++;
 	if(hit_limb > 0 && hit_scrape > 0)
